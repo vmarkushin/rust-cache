@@ -1,6 +1,6 @@
 import * as core from "@actions/core";
 
-import { cleanTargetDir } from "./cleanup";
+// import { cleanTargetDir } from "./cleanup";
 import { CacheConfig } from "./config";
 import { getCacheProvider, reportError } from "./utils";
 
