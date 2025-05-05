@@ -46,11 +46,11 @@ async function run() {
       core.info(`${lookupOnly ? "Found" : "Restored from"} cache key "${restoreKey}" full match: ${match}.`);
       if (!match) {
         // pre-clean the target directory on cache mismatch
-        for (const workspace of config.workspaces) {
-          try {
-            await cleanTargetDir(workspace.target, [], true);
-          } catch {}
-        }
+        // for (const workspace of config.workspaces) {
+        //   try {
+        //      await cleanTargetDir(workspace.target, [], true);
+        //   } catch {}
+        // }
 
         // We restored the cache but it is not a full match.
         config.saveState();
