@@ -33,6 +33,7 @@ async function run() {
     config.printInfo(cacheProvider);
     core.info("");
 
+    core.info(`Test`);
     core.info(`... ${lookupOnly ? "Checking" : "Restoring"} cache ...`);
     const key = config.cacheKey;
     // Pass a copy of cachePaths to avoid mutating the original array as reported by:
