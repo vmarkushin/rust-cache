@@ -70,7 +70,7 @@ export class CacheConfig {
 
       const job = process.env.GITHUB_JOB;
       if (job) {
-        key += `-${job}`;
+        // key += `-${job}`;
       }
     }
 
@@ -238,12 +238,12 @@ export class CacheConfig {
       }
     }
 
-    let lockHash = digest(hasher);
+    // let lockHash = digest(hasher);
 
     keyFiles.push(...parsedKeyFiles);
     self.keyFiles = sort_and_uniq(keyFiles);
 
-    key += `-${lockHash}`;
+    // key += `-${lockHash}`;
     self.cacheKey = key;
 
     self.cachePaths = [path.join(CARGO_HOME, "registry"), path.join(CARGO_HOME, "git")];
