@@ -296,7 +296,7 @@ export class CacheConfig {
    * Prints the configuration to the action log.
    */
   printInfo(cacheProvider: CacheProvider) {
-    core.startGroup("Cache Configuration");
+    core.startGroup("Cache Configuration (new)");
     core.info(`Cache Provider:`);
     core.info(`    ${cacheProvider.name}`);
     core.info(`Workspaces:`);
