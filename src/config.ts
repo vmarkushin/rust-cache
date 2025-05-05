@@ -244,7 +244,7 @@ export class CacheConfig {
     self.keyFiles = sort_and_uniq(keyFiles);
 
     // key += `-${lockHash}`;
-    self.cacheKey = key;
+    self.cacheKey = self.restoreKey;
 
     self.cachePaths = [path.join(CARGO_HOME, "registry"), path.join(CARGO_HOME, "git")];
     if (self.cacheBin) {
